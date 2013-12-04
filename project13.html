@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project 13</title>
+  
+  <style>
+    html {margin:2em; font-family:Helvetica, Arial, sans-serif;}
+    h1 {margin:0;}
+    h2 {color:#369;}
+	
+#box1 {
+  width:150px;
+  height:150px;
+  background-color: #FF530D;
+  box-shadow:0 0 8px 8px #000000;
+  transition:all 0.5s ease-in-out;
+ }
+ 
+  </style>
+
+</head>
+<body>
+  <header><h1>Javascript Demo</h1></header>
+
+  <h2>Alert</h2>
+  <button id="alert_button2">Alert</button>
+  <script>
+  var myButton = document.getElementById('alert_button2');
+  myButton.addEventListener("click", function(){
+    alert('This is, in fact, an alert');
+  });
+  </script>
+
+  <h2>Prompt</h2>
+  <button id="prompt_button">Prompt</button>
+  <script>
+  var myButton2 = document.getElementById('prompt_button');
+  myButton2.addEventListener("click", function(){
+	var prompt1 = prompt('Enter your Name');
+	for ( var i=1; i <= 5; i++ ) {
+	console.log(prompt1);
+}
+  });
+</script>
+  
+ <h2>Array of colors</h2>
+ 
+ <script>
+
+ 
+  var color_array = ['red','orange','yellow','green','blue','purple'];
+
+  for(i = 0; i < color_array.length; i++) {
+    document.write(color_array[i]);
+	document.write("<br>");
+}
+
+</script> 
+
+<h2>Mouse Events</h2>
+
+<div id="box1"></div>
+  <script>
+  
+  var myBox = document.getElementById('box1');
+  
+  myBox.onmouseover = function(){
+    console.log('Mouse Entered the box');
+  };
+  
+  myBox.onmouseout = function(){
+	console.log('Mouse left the box');
+};
+  </script>
+ 
+ <h2>The two boxes</h2>
+ <input type="text" id="my_input">First</input>
+ <input type="text" id="second_text">Second</input>
+  <button id="check_button">Check</button>
+  <script>
+  var my_input = document.getElementById('my_input');
+  var second = document.getElementById('second_text');
+  var myButton2 = document.getElementById('check_button');
+  myButton2.addEventListener("click", function(){
+    if(my_input.value === second_text.value){
+    alert('We have a match');
+  } else {
+    alert('Not a match');
+  }
+  });
+ 
+ </script>
+ 
+  
+</body>
+</html>

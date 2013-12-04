@@ -1,0 +1,69 @@
+body {
+		background:url(halo3.jpg);
+		background-size:cover;
+		background-attachment:fixed;
+		background-repeat:no-repeat;
+		margin: 0 15%;
+		font-family: sans-serif;
+		}
+h1 {
+		text-align: center;
+		font-family: sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #468966;
+		border-bottom: 1px solid #ffffff;
+		margin-top: 30px;
+		}
+h2, h3, h4, h5, h6 {
+		text-align: left;
+		font-family: sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #468966;
+		border-bottom: 1px solid #ffffff;
+		margin-top: 30px;
+		}
+blockquote {
+	border: 2px solid #8E2800;
+	background-color: #FFB03B;
+	padding: 10px;
+	border-radius: 15px;
+	text-align: center;
+	background: #f9c667;
+	background: -moz-linear-gradient(top,  #f9c667 0%, #f79621 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9c667), color-stop(100%,#f79621));
+	background: -webkit-linear-gradient(top,  #f9c667 0%,#f79621 100%);
+	background: -o-linear-gradient(top,  #f9c667 0%,#f79621 100%);
+	background: -ms-linear-gradient(top,  #f9c667 0%,#f79621 100%);
+	background: linear-gradient(to bottom,  #f9c667 0%,#f79621 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 );
+
+}
+
+.test {
+	border: 2px solid #8E2800;
+	padding: 10px;
+	background: #f9c667;
+	background: -moz-linear-gradient(top,  #f9c667 0%, #f79621 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9c667), color-stop(100%,#f79621));
+	background: -webkit-linear-gradient(top,  #f9c667 0%,#f79621 100%);
+	background: -o-linear-gradient(top,  #f9c667 0%,#f79621 100%);
+	background: -ms-linear-gradient(top,  #f9c667 0%,#f79621 100%);
+	background: linear-gradient(to bottom,  #f9c667 0%,#f79621 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 );
+
+}
+table, td, th {
+		border: 1px solid black;
+		font-family: tahoma, sans-serif;
+		border-collapse: collapse;
+		}
+
+td, th {padding: 3pt;}
+
+img {
+	float:right;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px 10px #FFB03B;
+}

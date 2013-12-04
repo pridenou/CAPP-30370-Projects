@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project 14</title>
+  <style>
+    html {margin:1em; font-family:Helvetica, Arial, sans-serif;}
+    h2 {clear:both;}
+    .box {width:200px; height:200px; border:1px solid #000; background-color:#ddd;}
+  </style>
+</head>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+
+
+</script>
+
+  <header><h1>Project 14</h1></header>
+
+  <h2>Source and Target</h2>
+  <h3>Source</h3>
+  <input type="text" id="text1" placeholder="Type here">
+  <h3>Target</h3>
+  <input type="text" id="text2" readonly="true" placeholder="Echo the result here">
+  <script type="text/javascript">
+  //using jquery
+  $(document).ready(function() { 
+	$('#text1').keyup(function() {
+		$('#text2').val($('#text1').val());
+		});
+	});
+	
+  //using javascript
+  //var text1 = document.getElementById('text1');
+  //text1.onkeyup = text1.onchange = function() {
+  //document.getElementById('text2').value = this.value;
+  //};
+  
+  </script>
+
+  <hr>
+
+  <h2>Image Swap</h2>
+  <img id="kitten" src="http://placekitten.com/g/300/200" title="A kitten" alt="A kitten" height="200" width="300"><br>
+  <input type="text" id="get-img" placeholder="Enter image url here"><button id="update_img">Update</button>
+  <script>
+	document.getElementById('update_img').addEventListener("click", function(){
+	var new_img = document.getElementById("get-img").value;
+	document.getElementById('kitten').src = new_img;
+	});
+	
+  </script>
+
+  <hr>
+
+  <h2>Font Sizer</h2>
+  <p id="to-style">This is my paragraph of stuff.</p><br>
+  <input type="text" id="font-size" placeholder="Enter a font size"><button id="font-button">Make it so</button>
+  <script>
+    document.getElementById('font-button').addEventListener("click", function() {
+	var new_font = document.getElementById("font-size").value;
+	document.getElementById('to-style').style.fontSize = new_font;
+	});
+  </script>
+
+  <hr>
+
+  <h2>Attribute Reporter</h2>
+  <img id="kitten2" src="http://placekitten.com/g/300/200" title="A kitten" alt="A kitten"><br>
+  <button id="get-attr">Log Attributes</button>
+  <script>
+	document.getElementById('get-attr').addEventListener("click", function() {
+		var input = document.getElementById('kitten2');
+		console.log(input.getAttribute('src'));
+		console.log(input.getAttribute('alt'));
+		});
+  </script>
+
+  <hr>
+
+  <h2>Element Counter</h2>
+  <input type="text" id="element-type" placeholder="Which element?"><br>
+  <button id="count_button">Count the Elements</button>
+  <input type="text" id="element-count" placeholder="Results here" readonly="true">
+  <script>
+	document.getElementById('count_button').addEventListener("click", function() {
+			
+		//by query
+		var qryAll = document.querySelectorAll(document.getElementById('element-type').value);
+		for(i = 0; i < qryAll.length; i++){
+			console.log(qryAll[i]);
+		}
+						
+		//by tag name
+		var elementToSearch = document.getElementById('element-type').value;
+		var ByTag = document.getElementsByTagName(elementToSearch);
+			console.log(ByTag);
+		for(i = 0; i < ByTag.length; i++){
+		console.log(ByTag[i]);		
+		}
+		
+		//by id
+		var idsearch = document.getElementById('element-type');
+		if (idsearch = null) {
+			idsearch = 0;
+		}	else {
+			idsearch = 1;
+		}
+			//console.log(idsearch);
+						
+		//by class
+		var class_search = document.getElementById('element-type').value;
+		var All_class = document.getElementsByClassName(class_search);
+			console.log(All_class);
+		for(i = 0; i < All_class.length; i++){
+		console.log(All_class[i]);
+		}
+	
+	var x = qryAll.length;
+	var y = ByTag.length;
+	var z = idsearch;
+	var xi = All_class.length;
+	var xv = x + y + xi + z;
+	//console.log(xv);
+		document.getElementById('element-count').value = xv;
+		
+	
+	});	
+		
+	
+  </script>
+
+
+</body>
+</html>

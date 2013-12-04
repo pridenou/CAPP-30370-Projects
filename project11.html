@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Project 11</title>
+ <style>
+ 
+ body {
+		background-color: #FFF0A5;
+		margin: 0 15%;
+		font-family: sans-serif;
+		}
+		
+ .ClassX{
+	content:url("http://pic.jpgdump.com/34547.gif");
+	height:250px;
+	width:250px;
+	margin:2em;
+	transition:all 1s ease;
+}
+
+ .ClassX:hover { 
+	-webkit-transform:rotate(-180deg);
+}
+
+ .sizeup{ 
+	content:url("http://pic.jpgdump.com/34547.gif");
+	height:250px;
+	width:250px;
+	margin:2em;
+	transition:all 1s ease;
+}
+ .sizeup:hover{
+	-webkit-transform:translate(30px, 30px) scale(1.5);
+}
+
+
+ .skew1 {
+	content:url("http://pic.jpgdump.com/34547.gif");
+	height:250px;
+	width:250px;
+	margin:2em;
+	transition:all 1s ease;
+}
+ .skew1:hover{
+	-webkit-transform:skewX(5deg);
+	-webkit-transform:skewY(-20deg);
+}
+ 
+ .box {
+  width:300px;
+  height:300px;
+  background-color: #FF530D;
+  box-shadow:0 0 8px 8px #000000;
+  transition:all 0.5s ease-in-out;
+}
+ .box:hover {
+  background-color:black;
+  box-shadow:0 0 8px 8px #FF530D;
+  width:300px;
+  height:300px;
+}
+ 
+ .box2 {
+  width:300px;
+  height:300px;
+  background-color: #FF530D;
+  box-shadow:0 0 8px 8px #000000;
+  transition:all 0.5s ease-in-out;
+ }
+ 
+ .box2:hover {
+  background-color:black;
+  box-shadow:0 0 8px 8px #FF530D;
+  -webkit-transform:rotate(25deg) scale(1.05);
+  -webkit-transform-origin: top right; 
+ }
+ </style>
+  
+ </head>
+ 
+ <body>
+   <h1>Photo 1</h1>
+   <img class="ClassX">
+	
+	<h1>Photo 2</h1>
+	<img class="sizeup">
+	
+	
+	<h1>Photo 3</h1>
+	<img class="skew1">
+	
+	<h1>Box 1</h1>
+	<div class="box"></div>
+	
+	<h1>Box 2</h1>
+	<div class="box2"></div>
+ </body>
+</html>
